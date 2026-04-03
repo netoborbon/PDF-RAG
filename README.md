@@ -89,7 +89,7 @@ The API is served by FastAPi, it exposes three POST endpoints: `/create_session`
 | File | Task |
 |---|---|
 | `data_ingestion.py` | Loads PDFs (single file or directory) using `PDFPlumber`, splits them into overlapping chunks with `RecursiveCharacterTextSplitter` |
-| `rag_models.py` | Instantiates the LLM (`ChatOllama`), embedding model (`OllamaEmbeddings`), and ChromaDB vector store, one isolated store per session |
+| `rag_models.py` | Instantiates the LLM (`ChatOllama`), embedding model (`OllamaEmbeddings`, 768 dimensions), and ChromaDB vector store, one isolated store per session |
 | `rag.py` | `RAGChat` class, orchestrates retrieval, prompt construction, LLM invocation, and a sliding window conversation memory |
 | `main.py` | FastAPI app, exposes three endpoints, manages an in-memory sessions dictionary |
 
