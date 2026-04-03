@@ -79,7 +79,7 @@ The API is served by FastAPi, it exposes three POST endpoints: `/create_session`
 * `rag_models.py`: instance the embedding model, LLM and vector store.  
 <br>
 
-![alt text](image-2.png)
+![alt text](image-1.png)
 
 ### Request flow
 ![alt text](image-2.png)
